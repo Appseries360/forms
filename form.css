@@ -126,6 +126,10 @@ button {
 .register p a:hover{
     text-decoration: underline;
 }
+label:has(+ input:required)::after{
+    content: "*";
+    color: #fff;
+}
 @media  screen and 
 (min-device-width: 320px)
  and (max-device-width: 480px) and
